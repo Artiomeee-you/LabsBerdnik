@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Профиль студентки Бердник Алины Андреевны</title>
+  <style>
+    /* Основные сбросы */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Контейнер всей страницы */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    /* Заголовок */
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Блок с данными о студентке и панелью загрузок */
+    .profile-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Секция с информацией о студентке */
+    .profile-info {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Фото студентки */
+    .profile-info .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      border: 3px solid #2980b9;
+    }
+
+    .profile-info h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+
+    .profile-info dl {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      row-gap: 10px;
+      column-gap: 10px;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .profile-info dt {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .profile-info dd {
+      margin-left: 0;
+      color: #555;
+    }
+
+    /* Панель загрузок лабораторных работ */
+    .lab-panel {
+      flex: 1 1 300px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .lab-panel h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #34495e;
+    }
+
+    .lab-list {
+      list-style: none;
+      margin-top: 10px;
+      flex: 1;
+    }
+
+    .lab-list li {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: #f0f3f7;
+      transition: background-color 0.2s;
+    }
+
+    .lab-list li:hover {
+      background-color: #e1e5eb;
+    }
+
+    .lab-list .lab-name {
+      font-size: 1rem;
+      color: #2c3e50;
+    }
+
+    .lab-list .download-btn {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+      color: #fff;
+      background-color: #2980b9;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .lab-list .download-btn:hover {
+      background-color: #1f618d;
+    }
+
+    /* Подвал */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    /* Адаптив */
+    @media (max-width: 768px) {
+      .profile-wrapper {
+        flex-direction: column;
+      }
+      .profile-info {
+        text-align: center;
+      }
+      .profile-info dl {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .profile-info dt,
+      .profile-info dd {
+        justify-self: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Заголовок страницы -->
+    <header class="header">
+      <h1>Личный кабинет студентки</h1>
+    </header>
+
+    <!-- Блок с профилем и панелью лабораторных -->
+    <div class="profile-wrapper">
+
+      <!-- Секция: Информация о студентке -->
+      <section class="profile-info">
+        <!-- Фото студентки: замените "photo.jpg" на путь к реальному изображению -->
+        <img src="photo.jpg" alt="Фото Бердник Алины Андреевны" class="profile-photo" />
+
+        <h2>Данные студентки</h2>
+        <dl>
+          <dt>ФИО:</dt>
+          <dd>Бердник Алина Андреевна</dd>
+
+          <dt>Номер студента:</dt>
+          <dd>230324</dd>
+
+          <dt>Факультет:</dt>
+          <dd>ФСПТ</dd>
+
+          <dt>Специальность:</dt>
+          <dd>СПиПП</dd>
+
+          <dt>Курс:</dt>
+          <dd>1 курс</dd>
+
+          <dt>Дата рождения:</dt>
+          <dd>04.06.2006</dd>
+
+          <dt>Место рождения:</dt>
+          <dd>г. Молодечно</dd>
+        </dl>
+      </section>
+
+      <!-- Секция: Лабораторные работы -->
+      <section class="lab-panel">
+        <h2>Лабораторные работы по информатике</h2>
+        <ul class="lab-list">
+          <li>
+            <span class="lab-name">ЛР №2</span>
+            <a href="ЛР2.rar" class="download-btn" download>Скачать</a>
+          </li>
+          <li>
+            <span class="lab-name">ЛР №5</span>
+            <a href="ЛР5.rar" class="download-btn" download>Скачать</a>
+          </li>
+          <li>
+            <span class="lab-name">ЛР №7</span>
+            <a href="ЛР7.rar" class="download-btn" download>Скачать</a>
+          </li>
+          <li>
+            <span class="lab-name">ЛР №8</span>
+            <a href="ЛР8.rar" class="download-btn" download>Скачать</a>
+          </li>
+          <li>
+            <span class="lab-name">ЛР №9</span>
+            <a href="ЛР9.rar" class="download-btn" download>Скачать</a>
+          </li>
+          <li>
+            <span class="lab-name">ЛР №10</span>
+            <a href="ЛР10.rar" class="download-btn" download>Скачать</a>
+          </li>
+          
+        </ul>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>
